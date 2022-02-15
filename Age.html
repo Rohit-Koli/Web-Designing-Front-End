@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demonstrate Date Functions</title>
+<script type="text/javascript">
+function calAge(){
+var today=new Date();
+
+var d=today.getDay();
+var usd=parseInt(document.myf.day.value);
+if(d>usd){
+var agd=d-usd;
+}
+else{
+var agd=usd-d;
+}
+//document.getElementById("agd").value=agd;
+
+
+
+var m=today.getMonth();
+var usm=parseInt(document.myf.month.value);
+if(m>usm){
+var agm=m-usm;
+}
+else{
+var agm=usm-m;
+}
+//document.getElementById("agm").value=agm;
+
+var y=today.getFullYear();
+var usy=parseInt(document.myf.year.value);
+var agy=y-usy;
+document.getElementById("age").value=agy+" Years "+agm+" Months "+agd+" Days old";
+
+}
+</script>
+</head>
+<body>
+<form name="myf">
+Enter Dob:<input type="text" size="5" name="day" placeholder="Day">
+<input type="text" name="month" size="5" placeholder="Month">
+<input type="text" name="year" size="5" placeholder="Year"><br>
+Your Are :<input type="text" readonly="true" id="age" size="30">
+<input type="button" value="Calculate Age" onclick="calAge()">
+
+</form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concatination in JS</title>
+    <script>
+        var slang=new Array("Javavscript","VB Script");  
+        var plang=new Array("CPP","java");  
+        var clangs= slang.concat(plang);
+        document.write(clangs);
+        //plang.fill("php",1);
+        //document.write("<br>"+plang);
+        var parr=plang.push("C#.net");
+        document.write("<br>"+plang);
+        plang.pop();//it remove last element of array
+        document.write("<br>"+plang);
+        //sorting
+        var rno=new Array(5,4,3,2,1,6)
+        rno.sort();
+        document.write("<br>"+rno);
+        //desending order
+        rno.sort(function compare(a,b){return b-a;});
+        document.write(" Desending sort "+rno);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

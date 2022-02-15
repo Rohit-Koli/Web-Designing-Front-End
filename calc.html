@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creating calculator using Javascript</title>
+    <script language="Javascript">
+      var fno = document.getElementById("txtfno").value;
+      var sno = document.getElementById("txtsno").value;
+      var a = eval(fno);
+      var b = eval(sno);
+      var res = 0;
+      function add() 
+      {
+        //alert(a);
+        res = a + b;
+        document.calsi.btnplus.value = res;
+        // d=10;
+        // e=20;
+        // s=d+e;
+        // document.write(s);
+
+      }
+      function sub() 
+      {
+        //alert(a);
+        res = a - b;
+        document.calsi.btnsub.value = res;
+      }
+      function multi() 
+      {
+        //alert(a);
+        res = a * b;
+        document.calsi.btnmult.value = res;
+      }
+      function division() 
+      {
+        //alert(a);
+        res = a / b;
+        document.calsi.btndivi.value = res;
+      }
+    </script>
+  </head>
+
+  <body>
+    <pre>
+    <form name="calsi"> 
+          first number <input type="text" id="txtfno">
+          first second <input type="text" id="txtsno">
+          result: <input type="text" id="txtres" >
+          <input type="button" value="+" name="btnplus" onclick="add()">
+          <input type="button" value="-" name="btnsub"  onclick="sub()">
+          <input type="button" value="/" name="btnmult" onclick="multi()">
+          <input type="button" value="*" name="btndivi" onclick="division()">
+          <!-- <input type="button" value="+" id="plus"> -->
+          <!-- <input type="button" value="INternal addition" onclick="add()"> -->
+     </form>
+    </pre>
+  </body>
+</html>

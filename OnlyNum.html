@@ -1,0 +1,30 @@
+<html>  
+<head> Javascript Events </head>  
+<body>  
+<script language="Javascript" type="text/Javascript">  
+    <!--  
+    function whichkey(e)  
+    {  
+		var key;
+		
+		
+			key=e.keyCode;
+			if ((key>=48)&&(key<=57))
+			{
+				return true;
+			}
+			else
+			{
+				alert("Only accept Numberes");
+				return false;
+			}
+		}
+         
+      
+    //-->  
+</script>  
+<form>  
+MObile Number:-<input type="text" onKeyPress="return whichkey(event)">  
+</form>  
+</body>  
+</html>

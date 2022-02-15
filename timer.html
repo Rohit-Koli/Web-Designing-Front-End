@@ -1,0 +1,47 @@
+<html>
+<head>
+<script language="javascript">
+function amount()
+{
+var a=parseInt(document.f1.dd2.value);
+var b=parseInt(document.f1.mm2.value);
+var c=parseInt(document.f1.yyyy2.value);
+var p=parseInt(document.f1.dd1.value);
+var q=parseInt(document.f1.mm1.value);
+var r=parseInt(document.f1.yyyy1.value);
+var s=a-p;
+alert("Your Total Days of booking are : "+s);
+var cost=s*500;
+document.write("Total Amount for "+s+ " Days is : "+cost);
+}
+
+</script>
+<style>
+body{ color:blue;
+      background-color:aqua;}
+.t1{background-color:red;}
+</style>
+</head>
+<body>
+<h2>***Hotel 5 Star**</h2>
+<p><u>Welcome to Our Online Services</u></p>
+<table border="2" class=t1>
+<form name="f1"><tr><td>
+Enter Starting Date of Booking : </td>
+<td>
+<input type="text" name="dd1" size="2" placeholder="DD">
+ <input type="text" name="mm1" size="2" placeholder="MM">
+<input type="text" name="yyyy1" size="4" placeholder="YYYY"></td></tr>
+<tr><td>Enter Last Date of Booking :</td>
+<td>
+<input type="text" name="dd2" size="2" placeholder="DD">
+    <input type="text" name="mm2" size="2" placeholder="MM">
+    <input type="text" name="yyyy2" size="4" placeholder="YYYY"></td></tr>
+    <tr><td>Calculate Total Amount :</td>
+    <td><input type="button" value="Calculate" onclick="amount()"></td></tr>
+    </table>
+    </form>
+    
+    </body>
+    </html>
+    

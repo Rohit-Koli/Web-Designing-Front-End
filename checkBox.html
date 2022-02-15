@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function myFunction() {
+              var checkBox = document.getElementById("myCheck");
+              var checkBox = document.getElementById("myCheck2");
+              var text = document.getElementById("text");
+              if (checkBox.checked == true){
+                //alert("Your selected value is "+checkBox.value);
+                document.bgColor=checkBox.value;
+              } if (checkBox2.checked == true){
+                alert("Your selected value is "+checkBox2.value);
+              } 
+            }
+            </script>
+    </head>
+<body>
+
+<!-- <p>Display some text when the checkbox is checked:</p> -->
+
+
+<label for="myCheck">Checkbox:</label> 
+<input type="checkbox" id="myCheck"  value="red" onclick="myFunction()"><br>
+<input type="checkbox" id="myCheck2"  value="green" onclick="myFunction()">
+
+<p id="text" style="display:none">Checkbox is CHECKED!</p>
+
+</body>
+</html>

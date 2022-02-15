@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dialog boxes</title>
+  <script>
+    function age1()
+   {  
+     alert("welcome to cowid registration page !!");    
+      var a=prompt("Enter your Age :")
+      var check=confirm("Do you like to check whether you are eligible for vaccination or Not !")
+      if (check == true) 
+      {
+        if (a<=18)
+         {
+          alert("you are not eligible");
+         }
+          else
+          {
+          alert("you are eligible");
+          }
+      }
+    }
+  </script>
+</head>
+
+<body bgcolor="orange">
+  <p>to check whether you are eligible for covid-19 vaccination</p>
+  <form>
+    <input type="button" value="check number" onclick="age1()">
+  </form>
+</body>
+</html>

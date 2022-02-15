@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Demonstrate use ot date object</title>
+<script language="javascript">
+function amount()
+{
+var a=parseInt(document.f1.dd2.value);
+var b=parseInt(document.f1.mm2.value);
+var c=parseInt(document.f1.yyyy2.value);
+var p=parseInt(document.f1.dd1.value);
+var q=parseInt(document.f1.mm1.value);
+var r=parseInt(document.f1.yyyy1.value);
+var s=a-p;
+alert("Your Total Days of booking are : "+s);
+var cost=s*500;
+document.getElementById("camt").innerHTML="Total Amount for "+s+ " Days is : "+cost;
+}
+</script>
+</head>
+<body bgcolor="orange" text="yellow">
+  <h1 align="center"> <u><i>Taj Hotel<br>Shirpur</h1></i></u>
+  <b>Hotel Room Booking Online</b>
+  <hr>
+<form name="f1" align=center><b>
+Enter Starting Date of Booking : 
+<br>
+<input type="text" name="dd1" size="2" placeholder="DD">
+<input type="text" name="mm1" size="2" placeholder="MM">
+<input type="text" name="yyyy1" size="4" placeholder="YYYY"><br><br>
+Enter Last Date of Booking : 
+<br>
+<input type="text" name="dd2" size="2" placeholder="DD">
+<input type="text" name="mm2" size="2" placeholder="MM">
+<input type="text" name="yyyy2" size="4" placeholder="YYYY"><br><br>
+<br>
+Calculate Total Amount For Per day: <br><input type="button" value="Calculate" onclick="amount()">
+<p id=camt></p>
+</b>
+</form>
+</body>
+</html>

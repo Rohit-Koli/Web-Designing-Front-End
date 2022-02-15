@@ -1,0 +1,23 @@
+<html>
+<head>
+<script language="javascript">
+function table ()
+{
+var a=document.f1.num.value,b;
+document.write("<table broder=1>");
+for(i=1;i<=10;i++)
+{
+c=a*i;
+   document.write("<tr><td>"+c+"</tr></td>");
+}
+document.write("</table>");
+}
+</script>
+</head>
+<body>
+<form name=f1>
+Enter any number:<input type=text name=num>
+<input type="button" value="click to see table"onclick="table()">
+</form>
+</body>
+</html>

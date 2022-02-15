@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forrm accesing</title>
+    ><script>
+        // if form fields have unoque id then it is possible to access them using the
+        // getElementById() method . There is some ways to declare :-
+        // 1) elements[]:-it contains collection of form fields.
+        // Syntax:- Document.form_name.elements[index_number];
+        //          Document.form_name.elements["name_attributes_value"];
+        //          Document.form_name.name_attributes_value;
+        //          Document.form_name.ID_attributes_value;
+        // 2)getElementByName("fields name")- htis message is also use to access form fields
+
+
+             var usrname = document.getElementById(username_id); 
+             console.log(usrname);
+             console.log(usrname.name);
+             console.log(usrname.id);
+                //with element [indexnumber]
+                // var usrname = document.myform.element[0];
+                // console.log(usrname.name);
+                // console.log(usrname.type);
+                // console.log(usrname.id);
+    </script>
+</head>
+<body>
+    <form action="" name="myform" id="myformid">
+        Username:<input type="text" name="m username" id="username_id">
+        <br>
+        Password:<input type="password" name="m_password" id="password id">
+       <br>
+       <input type="submit" name="y subtn" value="submit"> 
+    </form>
+    <hr>
+    <!-- <form action="" name="yourform" id="yourformid"> 
+        Username:<input type="text" name="y username field" >
+        <br>
+        Password:<input type="password" name="y password">
+       <br>
+       <input type="submit" name="y subtn" value="submit"> 
+    </form>-->
+</body>
+</html>

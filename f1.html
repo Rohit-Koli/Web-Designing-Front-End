@@ -1,0 +1,77 @@
+<html>  
+<head> 
+	<style>
+		body{
+			font-size: medium;
+			font-family: cursive;
+		}
+	</style>
+</head>  
+<body>  
+	<h2>
+		Javascript Events
+	</h2>
+<script language="Javascript" type="text/Javascript">  
+    <!--  
+    function isvalidemail()
+    {  
+		var evalue=document.f1.txtemail.value;
+		var atpos=evalue.indexOf("@");
+		var dotpos=evalue.lastIndexOf(".");
+		if (atpos<1||dotpos-atpos<2)
+		{
+			alert("Invalid Email");
+			return false;
+		}
+		else
+		{
+			return true;
+		}		
+	} 
+	function checkpass() 
+	{
+		var pvalue=document.f1.txt;
+		var len=pvalue.length
+		if (len<6)
+	    {
+			alert("Too week passord !!");
+			return false;			
+		}		
+		else()
+		{
+			return true;
+		}
+		function checkmobno()
+		{
+			var mvalue=document.f1.txtmobno.value;
+			if (isNaN) 
+			{
+				alert("Invalid mobile number");
+				return false;				
+			}			
+			else
+			{
+				return true;
+			}
+		}
+		function Validemail()
+		{
+			var =document.getElementById("txtpassword").value;
+
+		}
+	}
+    //-->	
+</script> 
+</head>
+<body><pre>
+<form name="f1">  
+First Name:-<input type="text" pattern="[A-Za-z]" name="txtfname" onkeypress="onlychar()">
+*Email:-<input type="text" onblur="validemail()" name="txtemail">
+*Password:-<input type="password" onblur="checkpass()" id="txtpassaword"> 
+Retype password:-<input type="password" onblur="comppass()" name="txtpassword2">
+*MObile Number:-<input type="text" onblur="checkmobno" name="txtmobno">
+<input type="submit" value="submit">
+</form>  
+</pre>
+</body>  
+</html>

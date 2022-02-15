@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form name="f1">
+        <input type="text" name="txtcolor">
+        <input type="button" value="show greed" onclick="show()">
+    </form>
+<script> 
+function show()
+{ 
+var fcolor=document.f1.txtcolor.value;  
+var result;  
+switch(fcolor)
+{  
+case 'red':  
+result="red is your favorite color";  
+break;  
+case 'green':  
+result="green is your favorite color";  
+break;  
+case 'white':  
+result="white is your favorite color";  
+break;  
+default:  
+result="you dont like any colors !!";  
+}  
+document.write(result);  
+}
+</script>  
+</body>
+</html>

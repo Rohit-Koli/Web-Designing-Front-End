@@ -1,35 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tut2</title>
+    <title>Write example of square and cube</title>
+    <script> 
+    function showval()
+    {
+        
+        //var a=document.f1.txtname.value;
+        var a=document.getElementById("txtname").value;
+        alert(a);
+    }
+    </script>
 </head>
-<style> 
-*{
-  background-color:black;
-  color: white;
-}
-.p1{
-  text-align:center;
-
-}
-div>u{
-  text-align:center;
-  color:red;
-
-}
-
-  </style>
 <body>
-  <p class="p1">this is paragraph</p>
-  <u>this is underlined</u>
-  <br><br>
-
-  <div> 
-   <u>This is underlined under div tag</u> 
-     </div>
-    
+    <form name="f1">
+        <br>
+        Enter your Name <input type=text id="txtname">
+        <input type="button" name="btnshow" value="show name" onclick="showval()">
+     </form>
 </body>
 </html>

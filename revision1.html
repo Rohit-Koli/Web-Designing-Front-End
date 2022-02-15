@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to add JS in a form</title>
+    <script>
+        function display()
+        {
+            var b=Document.getElementById("txtnum1").value;
+            var a=Document.getElementById("txtnum2").value;
+            var c;
+            c=a+b;
+        }
+    </script>
+</head>
+<body>
+    <form name="f1"">
+        Enter Number :<input id="txtnum2" type="text"><br>
+        Enter Number :<input id="txtnum1" type="text"><br>
+        click here for value <input type="button" value="submit" name="btnshow" onclick="display()">
+    </form>
+</body>
+</html>

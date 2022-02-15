@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>table</title>
+    <script language="Javascript">
+        function display()
+        {
+            var a=document.getElementById("txtname").value;
+            document.write("<table border=1>");
+                for(i=1;i<=10;i++)
+                {
+                    document.write("<tr><td>"+a+"</td></tr>")
+                }
+                document.write("</table>");
+        }
+    </script>
+</head>
+<body>
+    <form name="f1">
+        Enter your Name<input type="text" id="txtname">
+        <input type="button" name="btnshow" value="submit" onclick="display()"> 
+     </form>
+</body>
+</html>
