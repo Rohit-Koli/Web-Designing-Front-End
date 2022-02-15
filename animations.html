@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Creating animations and keyframes in CSS</title>
+</head>
+<style>
+    .container
+     {
+       background-color: greenyellow;
+     }
+     .box
+     {
+        background-color: green;
+         width: 250px;
+         height: 250px;
+         position: relative;
+         animation-name: rohit2;/*this is animation name */
+         animation-duration: 2s;/*this is duration for animation*/
+         animation-iteration-count: 3;/*how many times animation loops */
+         /*animation-fill-mode: alternate;*//*animation fill upp quantity*/
+         /*animation-timing-function: ease-out;*/
+         /*animation-delay: 3s;*//*this is timing of delay animation*/
+         /*animation-direction: alternate;*//*direction of animation direction*/
+         
+         /*this properties is known as short hand properties of animation*/
+         /*animation animation: name duration timing-function delay iteration-count direction fill-mode;*/
+         animation : rohit2 5s ease-in 1s 12 backwards;
+         }
+         @keyframes rohit2
+         {
+             0%{
+             top:0px;
+             left: 0px;
+             }
+             25%{
+             top: 250px;
+             left: 0px;
+             }
+             75%{
+            top: 250px;
+             left: 250px;
+             }
+             100%{
+                 top:0px;
+                 left: 250px;
+             }
+         }
+     @keyframes rohit1 
+     {
+         from 
+         {
+             width: 200px;
+         }
+         to 
+         {
+             width: 1400px;
+         }         
+     }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">This is a box</div>
+    </div>
+</body>
+
+</html>

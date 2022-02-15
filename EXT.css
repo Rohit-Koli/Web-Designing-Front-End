@@ -1,0 +1,17 @@
+h1{
+    color:blue;
+    background-color:orange;
+    }
+    marquee,h2{
+    color:red;
+    background-left:5px solid red;
+    background-color:lightgreen;
+    }
+    img{
+    border:5px;
+    border-radius:20px;
+    }
+    p{
+    color:blue;
+    background-color:yellow;
+    }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions in HTML</title>
+    <style>
+        #box
+        {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            align-items: center;
+            /*transition-property: background-color;
+            transition-duration: 2s;
+            transition-timing-function:ease-in-out;
+            transition-delay: 3s;*/
+
+            /*transition short hand property*/
+            transition: all 1s ease-in-out 3s;
+        }
+        #box:hover {
+            background-color: chartreuse;
+            height: 400px;
+            width: 400px;
+            border-radius: 100px;
+            font-size: 7;
+        }
+    </style>
+</head>
+<body>
+    <h3> is Transitions in HTML</h3>
+    <div class="container">
+        <div id="box">
+            This is my box
+        </div>
+    </div>
+</body>
+</html>

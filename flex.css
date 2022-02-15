@@ -1,0 +1,44 @@
+.fcontainer
+        {
+            /* //background-color: aqua; */
+            display: flex;
+            border: 3px solid red;
+            flex-direction: row;
+            /* flex-direction: column; */
+            /* flex-direction: reverse; */
+            /* justify-content: center; */
+            /* justify-content: start; */
+            /* justify-content: center; */
+            align-items: center;
+            /* align-items: flex-start; */
+            /* flex-wrap: wrap; */
+            flex-flow: column wrap;
+
+            height: 50%;
+        }
+        .fitem
+        {
+            background-color: orange;
+            border: 2px solid black;
+            margin: 12px;
+            padding: 20px;
+            width: 130px;
+            height: 130px;
+        }
+body
+{
+    border: 1px solid black;
+    /* background-color: violet; */
+}
+.item1
+{
+    order: 3;
+    /* flex-grow: 2; */
+    /* flex-shrink: 9; */
+    align-self: center  ;
+}
+.item4
+{
+    order: 3;
+    /* flex-grow: 2; */
+}
